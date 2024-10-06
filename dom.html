@@ -3,30 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play with dom</title>
-    <style>
-        main{
-            background-color: antiquewhite;
-        }
-    
-    </style>
+    <title>Document</title>
 </head>
-<body class="myBody">
-    <main id="main-container">
-            <h2 id="play1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae iste quod voluptatem, unde alias corrupti deleniti non eveniet odio eius dolor a cum eligendi quia rem harum. Non, quisquam deleniti.</h2>
-        <h1>Lets Exploring DOM</h1>
-        <h3 class="Play">D-Dom</h3>
-        <h3 class="Play">O-Object</h3>
-        <h3 class="Play">M- Model</h3>
-        
-        <div id="first-section">
-                <ul id="ul-container">
-                    <li>Number-1</li>
-                    <li>Number-2</li>
-                    <li>Number-3</li>
-                </ul>
-        </div>
-    </main>
+<body id="main">
+
+    <button id="make-yellow">Make Yellow</button>
+    <!-- section*3>h1.section-title{Section title -$}+ul>li{Item -$}*4 -->
+    <!-- section#section-$*3>h1.section-title{Section title -$}+ul#itemList-$>li{Item -$}*4 -->
+    <section id="section-1">
+        <h1 class="section-title">Section title -1</h1>
+        <ul id="itemList-1">
+            <li>Item -1</li>
+            <li>Item -2</li>
+            <li>Item -3</li>
+            <li>Item -4</li>
+        </ul>
+    </section>
+    <section id="section-2">
+        <h1 class="section-title">Section title -2</h1>
+        <ul id="itemList-2">
+            <li>Item -1</li>
+            <li>Item -2</li>
+            <li>Item -3</li>
+            <li>Item -4</li>
+        </ul>
+    </section>
+    <section id="section-3">
+        <h1 class="section-title">Section title -3</h1>
+        <ul id="itemList-3">
+            <li>Item -1</li>
+            <li>Item -2</li>
+            <li>Item -3</li>
+            <li>Item -4</li>
+        </ul>
+    </section>
     <script src="dom.js"></script>
 </body>
 </html>

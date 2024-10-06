@@ -1,50 +1,6 @@
-const maincontainer = document.getElementById('main-container');
-const section = document.createElement('section') ;
-const h1 = document.createElement('h1');
-h1.innerText = 'Exploring Tecnology';
-h1.innerHTML = `
-    <p>HTML</p>
-    <p>TAILWIND CSS</p>
-    <p>JS</p>
-    <p>JS REACT</p>
-    <p>JS </p>
-`
-section.appendChild(h1);
-maincontainer.appendChild(section);
+console.log('addded')
+document.getElementById('make-yellow').addEventListener('click',function(){
+    document.body.style.backgroundColor = 'yellow';
+})
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// যখন p h1 or .....  থেকে ভিতরের লেখাটা পেতে হলে innerText  ব্যাবহার করতে হবে। আর box or input fild থেকে লেখাটা পেতেহলে ডট ভ্যালু .value ব্যাবহার করতে হবে।
