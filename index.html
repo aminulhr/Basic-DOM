@@ -7,9 +7,10 @@
 </head>
 <body>
     <section>
-        <h1>Lets Explor DOm</h1>
+        <h1>Lets Explore Dom</h1>
         <button onclick="makeGreen()">Make green</button>
         <button onclick="makeRad()">Make Red</button>
+        <button id="make-yellow">Make Yellow</button>
         <script>
 
         // option 1
@@ -27,7 +28,10 @@
         }
         function makeRad(){
             document.body.style.backgroundColor='red';
-        }
+        };
+        // final Option
+        const makeyellow = document.getElementById('make-yellow');
+        console.log(makeyellow)
         </script>
     </section>    
 <section>
