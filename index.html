@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> With Dom</title>
+</head>
+<body>
+    <section>
+        <h1>Lets Explor DOm</h1>
+        <button onclick="makeGreen()">Make green</button>
+        <button onclick="makeRad()">Make Red</button>
+        <script>
+
+        // option 1
+
+        document.getElementById('mGreen').addEventListener('click' , function(){
+            document.body.style.backgroundColor = 'green'
+        })
+        document.getElementById('mRed').addEventListener('click',function(){
+            document.body.style.backgroundColor = 'red'
+        })
+
+        // option 2
+        function makeGreen () {
+            document.body.style.backgroundColor = 'green';
+        }
+        function makeRad(){
+            document.body.style.backgroundColor='red';
+        }
+        </script>
+    </section>    
+<section>
+
+</section>
+</body>
+</html>
