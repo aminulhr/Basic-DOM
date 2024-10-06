@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub</title>
+</head>
+<body>
+    <h1 id="git-h1">Remove git hub repo</h1>
+    <input type="text" id="input-text"placeholder='Type Delete'>
+    <button id="delete-btn" disabled>Delete</button>
+    <script>
+        let textbox = document.getElementById('input-text').addEventListener('keyup',function(event){
+            const text =  event.target.value;
+            const btn = document.getElementById('delete-btn');
+            if(text === 'delete'){
+                btn.removeAttribute('disabled');
+            }else{
+                btn.setAttribute('disabled',true);
+            }
+            
+        })
+        
+        document.getElementById('delete-btn').addEventListener('click',function(){
+            const git  = document.getElementById('git-h1');
+            git.style.display = 'none';
+        })
+    </script>
+</body>
+</html>
